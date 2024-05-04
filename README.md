@@ -43,6 +43,18 @@ backgrounds.
     - Select the fields that we created earlier.
     - Select the validation (expression) policy.
 
+### Nexirift-Enforce-Case-Sensitive-Usernames
+
+The purpose of this policy is to ensure that usernames are case-sensitive.
+
+#### Setup
+
+1. Create a new **expression** policy (Customization > Policies):
+    - **Name:** nexirift-enforce-case-sensitive-usernames
+    - **Expression:** _Copy the contents of this
+      [file](https://raw.githubusercontent.com/Nexirift/authentik/main/policies/nexirift-enforce-case-sensitive-usernames.py)_.
+2. Enforce it on all enrollment flows (Flow and Stages > Stages).
+
 ## Property Mappings
 
 ### Profile
