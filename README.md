@@ -69,6 +69,40 @@ backgrounds.
     - **Expression:** _Copy the contents of this
       [file](https://raw.githubusercontent.com/Nexirift/authentik/main/property-mappings/profile.py)_.
 
+## Social Logins
+
+### NOTE
+
+Ensure that ALL social logins follow this configuration:
+
+-   **User matching mode:** Use the user's email address, but deny enrollment
+    when the email address already exists
+-   **Authentication flow:** default-source-authentication
+
+### Proton via SimpleLogin
+
+The purpose of this policy is to allow users to login with their Proton account.
+
+#### Setup
+
+1. Login with a Proton account to SimpleLogin:
+   https://simplelogin.com/developers.
+2. Create a new developer application:
+    - **Name:** Nexirift
+    - **Redirect URI:**
+      https://auth.nexirift.com/source/oauth/callback/simplelogin/
+3. Create a new OpenID OAuth Source:
+    - **Name:** Proton via SimpleLogin
+    - **Slug:** simplelogin
+    - **Consumer key:** _The Client ID from the previous step_
+    - **Consumer secret:** _The Client Secret from the previous step_
+    - **Authorization URL:** https://app.simplelogin.io/oauth2/authorize
+    - **Access token URL:** https://app.simplelogin.io/oauth2/token
+    - **Profile URL:** https://app.simplelogin.io/oauth2/userinfo
+    - **OIDC Well-Known URL:**
+      https://app.simplelogin.io/.well-known/openid-configuration
+    - **OIDC JWKS URL:** https://app.simplelogin.io/jwks
+
 ## Credits
 
 Media upload expressions were taken from
