@@ -23,6 +23,11 @@ We have the following groups set up in Authentik:
 
 To see the policies that we use, see the [Policies](./policies) directory.
 
+## Applications
+
+To see the applications that we use, see the [Applications](./applications)
+directory.
+
 ## Property Mappings
 
 To see the property mappings that we use, see the
