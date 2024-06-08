@@ -7,6 +7,18 @@
 A repository to hold configs for the authentication solution we use:
 [Authentik](https://goauthentik.io/).
 
+## Groups
+
+We have the following groups set up in Authentik:
+
+-   Nexirift Staff
+    -   **Attributes:**
+        `notes: "This is for staff related services, such as Galaxy, etc."`
+-   Nexirift Developers
+    -   **Parent:** Nexirift Staff
+    -   **Attributes:**
+        `notes: "This is for developer related services, such as: Sentry/Axiom, etc."`
+
 ## Policies
 
 To see the policies that we use, see the [Policies](./policies) directory.
