@@ -17,7 +17,7 @@ We have the following groups set up in Authentik:
 -   Nexirift Developers
     -   **Parent:** Nexirift Staff
     -   **Attributes:**
-        `notes: "This is for developer related services, such as: Sentry/Axiom, etc."`
+        `notes: "This is for developer related services, such as: Sentry, etc."`
 
 ## Policies
 
