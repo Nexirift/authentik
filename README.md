@@ -71,6 +71,18 @@ backgrounds.
 
 ## Social Logins
 
+We use the following social logins:
+
+-   Discord
+-   GitHub
+-   GitLab
+-   Google
+-   Patreon
+-   Proton via SimpleLogin
+-   Reddit
+-   Twitch
+-   Twitter
+
 ### NOTE
 
 Ensure that ALL social logins follow this configuration:
