@@ -123,8 +123,8 @@ By default, Authentik will show the username in the navigation bar next to the
 profile picture. It would be a better design choice to show the display name
 instead of the username.
 
-1. Go to System > Brands and edit `authentik-default`.
-2. Toggle `Other global settings` and put this in:
+1. Go to System > Brands and edit the `authentik-default` brand.
+2. Show `Other global settings` and put this in `Attributes`:
 
 ```yaml
 settings:
