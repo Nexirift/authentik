@@ -103,6 +103,23 @@ The purpose of this policy is to allow users to login with their Proton account.
       https://app.simplelogin.io/.well-known/openid-configuration
     - **OIDC JWKS URL:** https://app.simplelogin.io/jwks
 
+## Brand Settings
+
+### Show display name in navigation bar
+
+By default, Authentik will show the username in the navigation bar next to the
+profile picture. It would be a better design choice to show the display name
+instead of the username.
+
+1. Go to System > Brands and edit `authentik-default`.
+2. Toggle `Other global settings` and put this in:
+
+```yaml
+settings:
+    navbar:
+        userDisplay: name
+```
+
 ## Credits
 
 Media upload expressions were taken from
