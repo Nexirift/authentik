@@ -42,6 +42,9 @@ backgrounds.
 3. Edit `default-user-settings` (Flow and Stages > Stages):
     - Select the fields that we created earlier.
     - Select the validation (expression) policy.
+4. Edit `Avatars` in System > Settings:
+    - Add `attributes.avatar` is before all other fields.
+    - Final example: `attributes.avatar,gravatar,initials`.
 
 ### Nexirift-Enforce-Case-Sensitive-Usernames
 
